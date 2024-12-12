@@ -1,0 +1,367 @@
+:root {
+    --blue: #7c9eb2;
+    --violet: #52528c;
+    --russian-violet: #372554;
+    --dark-purple: #231123;
+}
+
+h1, p {
+    font-family: "Jockey One", serif;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+h1 {
+    position: relative;
+}
+
+a {
+    all: unset;
+    position: relative;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 10px;
+    background-color: var(--blue);
+    transition: width 0.1s ease-in-out;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    padding-top: 6rem;
+}
+
+.section-break {
+    height: 8rem;
+    background-color: var(--blue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+/*
+    Footer
+*/
+
+footer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 5rem;
+    background-color: var(--dark-purple);
+}
+
+.ex-link {
+    color: var(--blue)
+}
+
+/* 
+    Header
+*/
+.head {
+    background-color: var(--dark-purple);
+    height: 6rem;
+    width: 100%;
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it is above other elements */
+}
+
+.nav-bar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.nav-bar a {
+    color: white;
+}
+
+.home-btn {
+    font-size: 3rem;
+}
+
+.secondary-nav {
+    padding: .5rem;
+    background-color: var(--russian-violet);
+    color: black;
+    display: flex;
+    justify-content: right;
+    position: fixed; /* Fix the secondary nav at the top */
+    top: 6rem; /* Position it below the header */
+    width: 100%;
+    z-index: 999; /* Ensure it is above other elements but below the header */
+}
+
+.book-btn {
+    all: unset;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--blue);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: var(--violet);
+    transform: scale(1.05);
+}
+
+.book-btn:active {
+    transform: scale(0.95);
+}
+
+/*
+    Home
+*/
+
+.hero-card {
+    padding: 1em;
+    font-size: 8rem;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    color: white;
+}
+
+.home-hero {
+    object-fit: cover;
+    width: 100%;
+    height: 35rem;
+}
+
+.home-section1 {
+    background-image: url(https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?q=80&w=2992&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 100%;
+    padding-top: 2rem;
+}
+
+.para {
+    padding-left: 20rem;
+    padding-right: 20rem;
+    color: white;
+    font-size: 3rem;
+}
+
+.title {
+    color: white;
+    margin: 3rem 40rem 3rem 40rem;
+    font-size: 3rem;
+    text-align: center;
+    background-color: var(--blue);
+}
+
+.para2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    color: white;
+    font-size: 2rem;
+}
+
+/*
+    Lodging
+*/
+
+.lodge-img1 {
+    object-fit: cover;
+    width: 100%;
+    height: 30rem;
+}
+
+.lodge-img2 {
+    object-fit: cover;
+    width: 100%;
+    height: 50rem;
+}
+
+.lodge-section1 {
+    background-image: url(https://images.unsplash.com/photo-1529316275402-0462fcc4abd6?q=80&w=3871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+    color: white;
+    font-size: 3rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-top: 5rem;
+}
+
+.lodge-section2 {
+    background-image: url(https://plus.unsplash.com/premium_photo-1680098057172-c1a73ab2c131?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: bottom;
+    height: 35rem;
+    color: white;
+    font-size: 3rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-top: 5rem;
+}
+
+/*
+    Food
+*/
+
+.food-img1 {
+    object-fit: cover;
+    width: 100%;
+    height: 30rem;
+}
+
+.food-section1 {
+    background-image: url(https://images.unsplash.com/photo-1650149044617-b377a61b9889?q=80&w=3849&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+    color: white;
+    font-size: 3rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-top: 5rem;
+}
+
+.food-section2 {
+    background-image: url(https://images.unsplash.com/photo-1534723570441-4c448d1010e5?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+    color: white;
+    font-size: 3rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-top: 5rem;
+}
+
+.txt {
+    background-color: var(--violet);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/*
+    Attraction
+*/
+
+.attraction-img1 {
+    object-fit: cover;
+    width: 100%;
+    height: 35rem;
+}
+
+.attraction-section1 {
+    background-image: url(https://images.unsplash.com/photo-1439405326854-014607f694d7?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+    color: white;
+    font-size: 3rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-top: 5rem;
+}
+.attraction-section2 {
+    background-image: url(https://plus.unsplash.com/premium_photo-1694475151718-e2f34189606f?q=80&w=3774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+    color: white;
+    font-size: 3rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-top: 5rem;
+}
+.attraction-section3 {
+    background-image: url(https://plus.unsplash.com/premium_photo-1682091874987-687e0c1026b8?q=80&w=3774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+    color: white;
+    font-size: 3rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-top: 5rem;
+}
+.attraction-section4 {
+    background-image: url(https://images.unsplash.com/photo-1679117730976-cdb5f6b05b88?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+    color: white;
+    font-size: 3rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-top: 5rem;
+}
+.attraction-section5 {
+    background-image: url(https://plus.unsplash.com/premium_photo-1661757986350-c71d35f4bf07?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: top;
+    height: 35rem;
+    color: white;
+    font-size: 3rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-top: 5rem;
+}
+
+/*
+    Transportation
+*/
+
+.transportation-img1 {
+    object-fit: cover;
+    width: 100%;
+    height: 40rem;
+}
+
+.transportation-section1 {
+    background-image: url(https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=3874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+    color: white;
+    font-size: 3rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-top: 5rem;
+}
+
+.transportation-section2 {
+    background-image: url(https://plus.unsplash.com/premium_photo-1676795223467-dad25a1e12d8?q=80&w=3840&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+    color: white;
+    font-size: 3rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-top: 5rem;
+}
